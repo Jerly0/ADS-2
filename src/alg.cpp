@@ -48,6 +48,7 @@ double sinn(double x, uint16_t count) {
   for (uint64_t i = 1; i <= count; i++) {
     answ += pown(-1, k)*pown(x, i)/fact(i);
     i++;
+    k++;
   }
   return answ;
 }
