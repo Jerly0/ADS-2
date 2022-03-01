@@ -10,11 +10,11 @@ double pown(double value, uint16_t n) {
   } else if (n == 1) {
     return value;
   } else if (n > 0) {
-    for (uint16_t i = 0; i < n; i++) {
+    for (uint16_t i = 1; i < n; i++) {
       value = value*number;
     } return value;
   } else {
-    for (uint16_t i = 0; i < n; i++) {
+    for (uint16_t i = 1; i < n; i++) {
       value = value*number;
     } return 1/value;
   }
