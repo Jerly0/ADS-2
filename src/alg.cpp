@@ -35,7 +35,11 @@ double calcItem(double x, uint16_t n) {
 }
 
 double expn(double x, uint16_t count) {
-  return 0;
+  double e = 1;
+  for (uint16_t i = 1; i <= count; i++) {
+    e = e + (pown(x, i)/fact(i));
+  }
+  return e;
 }
 
 double sinn(double x, uint16_t count) {
