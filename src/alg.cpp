@@ -22,10 +22,14 @@ double pown(double value, uint16_t n) {
 
 uint64_t fact(uint16_t n) {
   uint64_t number = n;
+  if (n != 0) {
   for (uint64_t i = 1; i < n; i++) {
     number = number*i;
   }
   return number;
+  } else {
+    return 1;
+  }
 }
 
 double calcItem(double x, uint16_t n) {
