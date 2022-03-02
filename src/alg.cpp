@@ -54,5 +54,12 @@ double sinn(double x, uint16_t count) {
 }
 
 double cosn(double x, uint16_t count) {
-  return 1;
+  double answ = 0;
+  uint16_t k = 2;
+  for (uint64_t i = 0; i < 2*count; i++) {
+    answ += pown(-1, k)*pown(x, i)/fact(i);
+    i++;
+    k++;
+  }
+  return answ;
 }
