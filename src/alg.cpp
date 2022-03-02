@@ -43,10 +43,12 @@ double expn(double x, uint16_t count) {
 }
 
 double sinn(double x, uint16_t count) {
-  long double answ = 0;
+  double answ = 0;
+  k = 2;
   for (uint64_t i = 1; i < count; i++) {
     answ += pown(-1, (i - 1))*pown(x, i)/fact(i);
     i++;
+    k++;
   }
   return answ;
 }
